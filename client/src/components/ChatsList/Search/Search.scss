@@ -1,0 +1,23 @@
+.search-container {
+    background-color: #fafafa;
+    border-radius: 25px;
+    padding: 10px 10px 10px 15px;
+    margin: 20px 0 6px 0px;
+
+    &-img {
+        height: 14px;
+    }
+
+    &-input {
+        background-color: #fafafa;
+        border: 0;
+        padding: 0 12px;
+        font-size: 16px;
+        margin-left: auto;
+        width: 90%
+    }
+
+    &-input:focus {
+        outline: 0;
+    }
+}

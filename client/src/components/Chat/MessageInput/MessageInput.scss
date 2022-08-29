@@ -1,0 +1,28 @@
+.messageinput-container {
+    background-color: #fafafa;
+    border-radius: 25px;
+    height: 30px;
+    padding: 15px 0px 15px 15px;
+    margin: 10px 15px 10px 15px;
+    display: flex;
+
+    &-img {
+        height: 30px;
+        margin-left: auto;
+        margin-right: 20px;
+        border-color: #fafafa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &-input {
+        background-color: #fafafa;
+        border: 0;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    &-input:focus {
+        outline: 0;
+    }
+}

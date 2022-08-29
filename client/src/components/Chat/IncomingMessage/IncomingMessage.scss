@@ -1,0 +1,25 @@
+.incoming-container {
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    max-width: 70%;
+
+    &-avatar {
+        margin-right: 15px;
+    }
+
+    &-content {
+        .content-message {
+            background-color: #3c4252;
+            color: white;
+            padding: 13px;
+            border-radius: 25px;
+            
+        }
+        
+        .content-date {
+            padding: 10px 0 0 10px;
+            color: #ababab;
+            font-size: 14px;
+        }
+    }
+}

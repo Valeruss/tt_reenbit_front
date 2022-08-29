@@ -1,0 +1,28 @@
+.chatitem-container {
+    display: flex;
+
+    &-avatar {
+        padding: 27px 15px 20px 15px;
+    }
+
+    &-text {
+        margin: auto 0 auto 0;
+        width: 57%;
+
+        .name {
+            font-size: 18px;
+        }
+
+        .message {
+            font-size: 13px;
+            color: #666;
+        }
+    }
+
+    &-date {
+        font-size: 14px;
+        margin-left: auto;
+        padding: 20px 20px 0px 0px;
+        color: #666;
+    }
+}
