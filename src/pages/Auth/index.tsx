@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+// import { initializeApp } from 'firebase/app';
+// import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { AuthActionCreators } from '../../store/reducers/auth/action-creators';
 import { RouteNames } from '../../router';
 import { useNavigate } from 'react-router-dom';
-import { firebaseConfig } from './config';
+// import { firebaseConfig } from './config';
 import './Auth.scss';
 
 const Auth = () => {
