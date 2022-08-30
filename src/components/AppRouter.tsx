@@ -3,7 +3,8 @@ import { privateRoutes, publicRoutes, RouteNames } from '../router';
 import { useSelector } from 'react-redux'; 
 
 const AppRouter = () => {
-    const isAuth = useSelector((state: any) => state.auth.isAuth);
+    // const isAuth = useSelector((state: any) => state.auth.isAuth);
+    const isAuth = true;
 
     return isAuth ? (
         <Routes>
