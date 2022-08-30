@@ -4,22 +4,22 @@ import { useSelector } from 'react-redux';
 
 const AppRouter = () => {
     // const isAuth = useSelector((state: any) => state.auth.isAuth);
-    const isAuth = true;
 
-    return isAuth ? (
+    return (
+        // isAuth ? 
         <Routes>
             {privateRoutes.map((route) => (
                 <Route element={ <route.element/> } path={ route.path } key={ route.path } />
             ))}
             <Route path='/*' element={ <Navigate to={RouteNames.HOME} replace /> } />
         </Routes>
-    ) : (
-        <Routes>
-            {publicRoutes.map((route) => (
-                <Route element={ <route.element/> } path={ route.path } key={ route.path } />
-            ))}
-            <Route path='/*' element={ <Navigate to={RouteNames.AUTH} replace /> } />
-        </Routes>
+    // ) : (
+    //     <Routes>
+    //         {publicRoutes.map((route) => (
+    //             <Route element={ <route.element/> } path={ route.path } key={ route.path } />
+    //         ))}
+    //         <Route path='/*' element={ <Navigate to={RouteNames.AUTH} replace /> } />
+    //     </Routes>
     );
 };
 
