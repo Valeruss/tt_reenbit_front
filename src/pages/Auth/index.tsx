@@ -9,35 +9,35 @@ import { firebaseConfig } from './config';
 import './Auth.scss';
 
 const Auth = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    initializeApp(firebaseConfig);
+    // initializeApp(firebaseConfig);
 
-    const auth = getAuth();
-    const router = useNavigate();
+    // const auth = getAuth();
+    // const router = useNavigate();
 
-    useEffect(() => {
-        AuthCheck();
-    }, [ auth ]);
+    // useEffect(() => {
+    //     AuthCheck();
+    // }, [ auth ]);
 
-    const AuthCheck = onAuthStateChanged(auth, (user) => {
-        if (user) {
-            dispatch(AuthActionCreators.setIsAuth(true));
-            router(RouteNames.HOME)
-        }
-    });
+    // const AuthCheck = onAuthStateChanged(auth, (user) => {
+    //     if (user) {
+    //         dispatch(AuthActionCreators.setIsAuth(true));
+    //         router(RouteNames.HOME)
+    //     }
+    // });
 
-    const singInWithGoogle = async () => {
-        signInWithPopup(auth, new GoogleAuthProvider())
-            .then(response => {
-                console.log(response.user.uid);
-                dispatch(AuthActionCreators.setIsAuth(true));
-                router(RouteNames.HOME)
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    };
+    // const singInWithGoogle = async () => {
+    //     signInWithPopup(auth, new GoogleAuthProvider())
+    //         .then(response => {
+    //             console.log(response.user.uid);
+    //             dispatch(AuthActionCreators.setIsAuth(true));
+    //             router(RouteNames.HOME)
+    //         })
+    //         .catch(error => {
+    //             console.log(error);
+    //         });
+    // };
 
 
     return (
@@ -45,7 +45,7 @@ const Auth = () => {
             <div className='methods'>
                 <div 
                     className='methods-google'
-                    onClick={() => singInWithGoogle()}    
+                    // onClick={() => singInWithGoogle()}    
                 >Auth with Google</div>
             </div>
         </div>
