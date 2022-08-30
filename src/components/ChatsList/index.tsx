@@ -6,12 +6,12 @@ import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ChatsActionCreators } from '../../store/reducers/chats/action-creators';
-import { getAuth, signOut } from 'firebase/auth';
+// import { getAuth, signOut } from 'firebase/auth';
 import { AuthActionCreators } from '../../store/reducers/auth/action-creators';
 import './ChatList.scss';
 
 const ChatList = () => {
-    const auth = getAuth();
+    // const auth = getAuth();
     const dispatch = useDispatch();
 
     const [ filter, setFilter ] = useState<string>('');
@@ -25,7 +25,7 @@ const ChatList = () => {
     };
 
     const singOutUser = () => {
-        signOut(auth);
+        // signOut(auth);
         dispatch(AuthActionCreators.setIsAuth(false));
     };
 
